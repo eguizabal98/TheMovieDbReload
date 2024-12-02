@@ -5,6 +5,8 @@ pluginManagement {
                 includeGroupByRegex("com\\.android.*")
                 includeGroupByRegex("com\\.google.*")
                 includeGroupByRegex("androidx.*")
+                includeGroupByRegex(".*google.*")
+                includeGroupByRegex(".*android.*")
             }
         }
         mavenCentral()
@@ -21,4 +23,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "TheMovieDbReload"
 include(":app")
- 
