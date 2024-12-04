@@ -1,5 +1,5 @@
 [versions]
-kotlin = "2.0.0"
+kotlin = "2.0.21"
 coreKtx = "1.15.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
@@ -8,6 +8,10 @@ lifecycleRuntimeKtx = "2.8.7"
 activityCompose = "1.9.3"
 composeBom = "2024.11.00"
 android-gradle-plugin = "8.6.1"
+dagger-hilt = "2.52"
+hilt-androidx = "1.2.0"
+ksp-plugin = "2.0.21-1.0.26"
+javapoet = "1.13.0"
 retrofit = "2.11.0"
 
 [libraries]
@@ -29,6 +33,17 @@ kotlin-pluginGradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", ve
 android-pluginGradle = { module = "com.android.tools.build:gradle", version.ref = "android-gradle-plugin" }
 retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
 
+## Libraries - Poet
+javapoet = { module = "com.squareup:javapoet", version.ref = "javapoet" }
+
+## Libraries - Hilt
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "dagger-hilt" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "dagger-hilt" }
+hilt-core = { module = "com.google.dagger:hilt-core", version.ref = "dagger-hilt" }
+androidx-hilt-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "hilt-androidx" }
+
 [plugins]
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "dagger-hilt" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp-plugin" }
 
