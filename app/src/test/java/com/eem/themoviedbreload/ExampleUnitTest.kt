@@ -1,4 +1,4 @@
-package com.eem.themoviedb_reload
+package com.eem.themoviedbreload
 
 import org.junit.Test
 

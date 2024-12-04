@@ -1,4 +1,4 @@
-package com.eem.themoviedb_reload.ui.theme
+package com.eem.themoviedbreload.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
