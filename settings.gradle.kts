@@ -24,3 +24,4 @@ dependencyResolutionManagement {
 rootProject.name = "TheMovieDbReload"
 include(":app")
 include(":RemoteDataSource")
+include(":core:navigation")

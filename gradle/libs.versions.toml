@@ -15,6 +15,7 @@ javapoet = "1.13.0"
 retrofit = "2.11.0"
 okhttp = "4.12.0"
 gson = "2.11.0"
+navigation = "2.8.4"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -39,6 +40,10 @@ okhttp-bom = { group = "com.squareup.okhttp3", name = "okhttp-bom", version.ref 
 okhttp = { group = "com.squareup.okhttp3", name = "okhttp" }
 logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor" }
 gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+
+# Navigation
+androidx-compose-navigation = { module = "androidx.navigation:navigation-compose", version.ref = "navigation" }
+androidx-compose-navigation-hilt = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hilt-androidx" }
 
 ## Libraries - Poet
 javapoet = { module = "com.squareup:javapoet", version.ref = "javapoet" }
