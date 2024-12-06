@@ -13,12 +13,12 @@ import com.eem.themoviedbreload.OnBoardScreen
 fun AppNavigationHost(
     navController: NavHostController,
     modifier: Modifier = Modifier,
-    showSnackBar: (message: String, withDismissAction: Boolean, duration: SnackbarDuration) -> Unit
+    showSnackBar: (message: String, withDismissAction: Boolean, duration: SnackbarDuration) -> Unit,
 ) {
     NavHost(
         modifier = modifier,
         navController = navController,
-        startDestination = OnBoardNavigation.destination
+        startDestination = OnBoardNavigation.destination,
     ) {
         composable(OnBoardNavigation.route) {
             OnBoardScreen()

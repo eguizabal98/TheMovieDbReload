@@ -9,11 +9,23 @@ interface NavigationManager {
 
     fun popBackStack()
 
-    fun popBackStackWithResult(resultKey: String, result: Any)
+    fun popBackStackWithResult(
+        resultKey: String,
+        result: Any,
+    )
 
-    fun navigateWithPopUpTo(direction: NavigationCommand, popUpTo: String)
+    fun navigateWithPopUpTo(
+        direction: NavigationCommand,
+        popUpTo: String,
+    )
 
-    fun bottomNavigation(direction: NavigationCommand, popUpTo: String = "")
+    fun bottomNavigation(
+        direction: NavigationCommand,
+        popUpTo: String = "",
+    )
 
-    fun popUpTo(direction: NavigationCommand, inclusive: Boolean = false)
+    fun popUpTo(
+        direction: NavigationCommand,
+        inclusive: Boolean = false,
+    )
 }

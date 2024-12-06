@@ -17,7 +17,7 @@ import kotlinx.coroutines.flow.onEach
 @Composable
 fun HandleNavigationCommands(
     navigationManager: NavigationManager,
-    navController: NavController
+    navController: NavController,
 ) {
     LaunchedEffect(Unit) {
         navigationManager.commands
@@ -29,7 +29,7 @@ fun HandleNavigationCommands(
                     is PopBackStackWithResult -> {
                         navController.previousBackStackEntry?.savedStateHandle?.set(
                             command.resultKey,
-                            command.result
+                            command.result,
                         )
                         navController.popBackStack()
                     }
@@ -73,8 +73,6 @@ fun HandleNavigationCommands(
                         navController.navigate(command.destination)
                     }
                 }
-            }
-            .launchIn(this)
+            }.launchIn(this)
     }
 }
-

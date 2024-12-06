@@ -17,24 +17,27 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 object NetworkModule {
-
     @Provides
     @Singleton
-    fun getBaseClient(): OkHttpClient {
-        return OkHttpClient.Builder()
+    fun getBaseClient(): OkHttpClient =
+        OkHttpClient
+            .Builder()
             .followRedirects(false)
             .connectTimeout(TIMEOUT, TimeUnit.SECONDS)
             .readTimeout(TIMEOUT, TimeUnit.SECONDS)
             .writeTimeout(TIMEOUT, TimeUnit.SECONDS)
             .build()
-    }
 
     @Provides
     @Singleton
-    fun getApi(client: OkHttpClient, gsonBuilder: GsonBuilder): Retrofit {
+    fun getApi(
+        client: OkHttpClient,
+        gsonBuilder: GsonBuilder,
+    ): Retrofit {
         val gson = gsonBuilder.setStrictness(Strictness.LENIENT).create()
 
-        return Retrofit.Builder()
+        return Retrofit
+            .Builder()
             .baseUrl(ApiConfig.BASE_URL)
             .callFactory { client.newCall(it) }
             .addConverterFactory(GsonConverterFactory.create(gson))

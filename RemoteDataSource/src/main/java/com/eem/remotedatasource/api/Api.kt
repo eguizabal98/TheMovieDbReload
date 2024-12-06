@@ -1,4 +1,3 @@
 package com.eem.remotedatasource.api
 
-interface Api {
-}
+interface Api

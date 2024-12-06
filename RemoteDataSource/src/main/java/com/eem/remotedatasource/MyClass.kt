@@ -1,4 +1,3 @@
 package com.eem.remotedatasource
 
-class MyClass {
-}
+class MyClass
