@@ -26,31 +26,19 @@ internal class NavigationManagerImpl : NavigationManager {
         emitCommand(PopBackStack)
     }
 
-    override fun popBackStackWithResult(
-        resultKey: String,
-        result: Any,
-    ) {
+    override fun popBackStackWithResult(resultKey: String, result: Any) {
         emitCommand(PopBackStackWithResult(resultKey, result))
     }
 
-    override fun navigateWithPopUpTo(
-        direction: NavigationCommand,
-        popUpTo: String,
-    ) {
+    override fun navigateWithPopUpTo(direction: NavigationCommand, popUpTo: String) {
         emitCommand(NavigateWithPopUpTo(direction, popUpTo))
     }
 
-    override fun bottomNavigation(
-        direction: NavigationCommand,
-        popUpTo: String,
-    ) {
+    override fun bottomNavigation(direction: NavigationCommand, popUpTo: String) {
         emitCommand(BottomNavigation(direction, popUpTo))
     }
 
-    override fun popUpTo(
-        direction: NavigationCommand,
-        inclusive: Boolean,
-    ) {
+    override fun popUpTo(direction: NavigationCommand, inclusive: Boolean) {
         emitCommand(PopBackToNavigation(direction, inclusive))
     }
 

@@ -39,10 +39,10 @@ class MainActivity : ComponentActivity() {
                                 snackBarHostState.showSnackbar(
                                     message = message,
                                     withDismissAction = withDismissAction,
-                                    duration = duration,
+                                    duration = duration
                                 )
                             }
-                        },
+                        }
                     )
                 }
             }
