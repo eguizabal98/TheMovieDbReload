@@ -13,6 +13,8 @@ hilt-androidx = "1.2.0"
 ksp-plugin = "2.0.21-1.0.26"
 javapoet = "1.13.0"
 retrofit = "2.11.0"
+okhttp = "4.12.0"
+gson = "2.11.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -32,6 +34,11 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3" 
 kotlin-pluginGradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 android-pluginGradle = { module = "com.android.tools.build:gradle", version.ref = "android-gradle-plugin" }
 retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+okhttp-bom = { group = "com.squareup.okhttp3", name = "okhttp-bom", version.ref = "okhttp" }
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp" }
+logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor" }
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
 
 ## Libraries - Poet
 javapoet = { module = "com.squareup:javapoet", version.ref = "javapoet" }

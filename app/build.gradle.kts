@@ -33,4 +33,6 @@ dependencies {
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
     ksp(libs.androidx.hilt.compiler)
+
+    implementation(project(":RemoteDataSource"))
 }
