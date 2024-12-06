@@ -1,6 +1,7 @@
 package com.eem.plugins
 
 plugins {
+    id("com.eem.plugins.sanity")
     kotlin("jvm")
 }
 

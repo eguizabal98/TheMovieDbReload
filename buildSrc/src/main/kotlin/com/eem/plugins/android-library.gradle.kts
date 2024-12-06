@@ -5,6 +5,7 @@ import org.gradle.api.tasks.testing.logging.TestLogEvent
 
 plugins {
     id("com.android.library")
+    id("com.eem.plugins.sanity")
     kotlin("android")
 }
 

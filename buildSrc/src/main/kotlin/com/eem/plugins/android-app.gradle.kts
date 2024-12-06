@@ -2,6 +2,7 @@ package com.eem.plugins
 
 plugins {
     id("com.android.application")
+    id("com.eem.plugins.sanity")
     kotlin("android")
 }
 
